@@ -1,11 +1,32 @@
-body {
-  font-family: 'Gugi',
-  cursive;
-}
-*{
+/*
+  #2ed573 - green
+  #2f3542 - dark
+  #f1f2f6 - light
+  #3742fa - blue
+*/
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  font-family: 'Gugi',
+  cursive;
+  background-color: #3742fa;
+  color: #2f3542;
+}
+body::before{
+  content: '';
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 40vh;
+  bottom: 0;
+  left: 0;
+  border-radius: 100% 100% 0 0;
+  background-color: #2ed573;
+  z-index: -1;
+  transform: scale(1.25);
 }
 .App{
   width: 100vw;
@@ -28,8 +49,11 @@ body {
 button{
   width: 200px;
   height: 40px;
+  font-size: 21px;
+  font-family: 'Gugi',
+  cursive;
   background: none;
-  border: 1px solid #000;
+  border: 1px solid #2f3542;
   position: relative;
   cursor: pointer;
   z-index: 99;
@@ -45,12 +69,12 @@ button::before{
   width: 200px;
   height: 150px;
   border-radius: 200px 200px 0 0;
-  background-color: rgb(49, 49, 49);
+  background-color: #2f3542;
   transition: all 1s ease;
   z-index: -1;
 }
 button:hover{
-  color: white;
+  color: #f1f2f6;
 }
 button:hover::before{
   top: -100px;
