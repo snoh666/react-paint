@@ -7,7 +7,7 @@ const Home = () => {
       <div className="home-header">
         <h1>Canvas Vanilla Js Snake game</h1>
         <div className="description">
-          <span>Created for fun. It's a basic no textured snake game.</span>
+          <span>It's a basic no textured snake game. Created for fun.</span>
         </div>
       </div>
       <Link to='/game/'>
