@@ -4,7 +4,12 @@ import {Link} from 'react-router-dom';
 const Home = () => {
   return (
     <div className="app-content">
-      <h1>Home</h1>
+      <div className="home-header">
+        <h1>Canvas Vanilla Js Snake game</h1>
+        <div className="description">
+          <span>Created for fun. It's a basic no textured snake game.</span>
+        </div>
+      </div>
       <Link to='/game/'>
         <button>Go Play!</button>
       </Link>
