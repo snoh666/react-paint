@@ -13,3 +13,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+.app-content{
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
