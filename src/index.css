@@ -85,3 +85,9 @@ button:hover::before{
   top: 20px;
   right: 20px;
 }
+canvas{
+  margin-top: 50px;
+  width: 1000px;
+  height: 500px;
+  border: 1px solid #000;
+}
