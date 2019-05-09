@@ -6,7 +6,7 @@ const Game = () => {
     <div className="app-content">
       <h1>Game</h1>
       <Link to='/'>
-        <button>Go Home</button>
+        <button className="exit-btn">Go Home</button>
       </Link>
     </div>
 
