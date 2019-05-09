@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/react-snake-game">
       <div className="App">
         <Route exact path='/' component={Home} />
         <Route path='/game/' component={Game} />
