@@ -1,7 +1,7 @@
 {
   "name": "snake-canvas-with-react",
   "version": "0.1.0",
-  "homepage": "https://snoh666.github.io/react-snake-game/",
+  "homepage": "https://snoh666.github.io/react-paint/",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.1",
