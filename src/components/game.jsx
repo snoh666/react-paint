@@ -14,12 +14,13 @@ class Game extends React.Component{
   _startGame() {
     const canvas = this.refs.canvas;
     const ctx = canvas.getContext('2d');
-    console.log(canvas.getBoundingClientRect());
-    const canvasPos = [canvas.getBoundingClientRect().x.toFixed(), 213];
+    const canvasPos = [canvas.getBoundingClientRect().x, canvas.getBoundingClientRect().y];
 
-    document.onmousemove = (e) => {
-      if(e.screenX > canvasPos[0] && e.screenY > canvasPos[1] && e.ctrlKey !== true){
-        ctx.fillRect(e.screenX - canvasPos[0] - 10, e.screenY - canvasPos[1] - 10, 20, 20);
+    window.onmousemove = (e) => {
+      if(e.shiftKey === true) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      } else if(e.clientX > canvasPos[0] && e.clientY > canvasPos[1] && e.ctrlKey !== true){
+        ctx.fillRect(e.clientX - canvasPos[0] - 10, e.clientY - canvasPos[1], 20, 20);
       }
     };
   }
@@ -35,7 +36,9 @@ class Game extends React.Component{
         <Link to='/'>
           <button className="exit-btn">Go Home</button>
         </Link>
-        <p>Move mouse on canvas to draw! Hold ctrl to move without drawing.</p>
+        <div className="description">
+          <span>Move mouse on canvas to draw! Hold ctrl to move without drawing. Shift to clear.</span>
+        </div>
         <canvas
           ref='canvas'
           style={{height: 481, width: window.innerWidth - 50, backgroundColor: 'white'}}
