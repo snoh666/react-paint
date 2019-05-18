@@ -89,5 +89,7 @@ canvas{
   margin-top: 50px;
   width: 1000px;
   height: 500px;
-  border: 1px solid #000;
+}
+a{
+  text-decoration: none;
 }
