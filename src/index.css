@@ -44,6 +44,7 @@ body::before{
 }
 .description{
   width: 500px;
+  margin: 20px 0;
   text-align: center;
 }
 button{
@@ -86,7 +87,6 @@ button:hover::before{
   right: 20px;
 }
 canvas{
-  margin-top: 50px;
   width: 1000px;
   height: 500px;
 }
