@@ -1,40 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// const Setup = React.forwardRef((props, ref) => (
-//   <div className="app-content">
-//     <h1>Game</h1>
-//     <Link to='/'>
-//       <button className="exit-btn">Go Home</button>
-//     </Link>
-//     <canvas ref={ref}></canvas>
-//   </div>
-// ));
-const Game = () => {
-  let canvasRef = React.createRef();
-  /*
-    canvas size:
-      width: 1000px
-      height: 500px
+class Game extends React.Component{
 
-  */
-  const start = () => {
-    const canvas = canvasRef.current;
+  componentDidMount() {
+    const canvas = this.refs.canvas;
     const ctx = canvas.getContext('2d');
-    const setup = {
-      screenX: 1000,
-      screenY: 500,
-      playerX: 1000 / 2 - 10,
-      playerY: 500 / 2 -10
-    };
-    console.log(setup);
 
-    ctx.beginPath();
-    ctx.strokeRect(setup.playerX, setup.playerY,20,20);
-    ctx.stroke();
-  };
-  return (
-    (
+    canvas.width = canvas.clientWidth;
+    canvas.height = canvas.clientHeight;
+
+    ctx.strokeColor = 'black';
+    ctx.strokeRect(20, 20, 10, 10);
+    console.log('stroked');
+
+    this.startGame(canvas, ctx);
+
+    // document.addEventListener('keydown', e => console.log(e));
+  }
+
+  startGame(canvas, ctx) {
+    console.log('Hello from startGame');
+
+    ctx.strokeRect(canvas.width / 2 - 10, canvas.height / 2 - 10, 20, 20);
+  }
+
+
+
+  render() {
+    return (
       <div className="app-content">
         <h1>Game</h1>
         <Link to='/'>
@@ -42,12 +36,12 @@ const Game = () => {
         </Link>
         <p>Click on canvas to play!</p>
         <canvas
-          ref={canvasRef}
-          onClick={start}
+          ref='canvas'
+          style={{height: window.innerHeight / 3 * 2, width: window.innerWidth - 50}}
         />
       </div>
-    )
-  );
-};
+    );
+  }
+}
 
 export default Game;
