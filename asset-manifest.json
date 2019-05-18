@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-paint/static/css/main.7229562e.chunk.css",
-    "main.js": "/react-paint/static/js/main.ddb57778.chunk.js",
-    "main.js.map": "/react-paint/static/js/main.ddb57778.chunk.js.map",
+    "main.css": "/react-paint/static/css/main.6efb8238.chunk.css",
+    "main.js": "/react-paint/static/js/main.1c399ed6.chunk.js",
+    "main.js.map": "/react-paint/static/js/main.1c399ed6.chunk.js.map",
     "runtime~main.js": "/react-paint/static/js/runtime~main.ee7dbbf0.js",
     "runtime~main.js.map": "/react-paint/static/js/runtime~main.ee7dbbf0.js.map",
     "static/js/2.59543dd6.chunk.js": "/react-paint/static/js/2.59543dd6.chunk.js",
     "static/js/2.59543dd6.chunk.js.map": "/react-paint/static/js/2.59543dd6.chunk.js.map",
     "index.html": "/react-paint/index.html",
-    "precache-manifest.7485c9d263034fc2bd15ee3a623f7f02.js": "/react-paint/precache-manifest.7485c9d263034fc2bd15ee3a623f7f02.js",
+    "precache-manifest.4ed6f5af9e7831c2c2f9397d62705638.js": "/react-paint/precache-manifest.4ed6f5af9e7831c2c2f9397d62705638.js",
     "service-worker.js": "/react-paint/service-worker.js",
-    "static/css/main.7229562e.chunk.css.map": "/react-paint/static/css/main.7229562e.chunk.css.map"
+    "static/css/main.6efb8238.chunk.css.map": "/react-paint/static/css/main.6efb8238.chunk.css.map"
   }
 }
