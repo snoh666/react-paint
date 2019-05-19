@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-paint/static/css/main.a6b97d3c.chunk.css",
-    "main.js": "/react-paint/static/js/main.f3110bb5.chunk.js",
-    "main.js.map": "/react-paint/static/js/main.f3110bb5.chunk.js.map",
+    "main.js": "/react-paint/static/js/main.9ba23988.chunk.js",
+    "main.js.map": "/react-paint/static/js/main.9ba23988.chunk.js.map",
     "runtime~main.js": "/react-paint/static/js/runtime~main.ee7dbbf0.js",
     "runtime~main.js.map": "/react-paint/static/js/runtime~main.ee7dbbf0.js.map",
     "static/js/2.59543dd6.chunk.js": "/react-paint/static/js/2.59543dd6.chunk.js",
     "static/js/2.59543dd6.chunk.js.map": "/react-paint/static/js/2.59543dd6.chunk.js.map",
     "index.html": "/react-paint/index.html",
-    "precache-manifest.d46248c05360fa46559e09c0683198f0.js": "/react-paint/precache-manifest.d46248c05360fa46559e09c0683198f0.js",
+    "precache-manifest.5dac2979ab0eb03a5557128a5fb04a1e.js": "/react-paint/precache-manifest.5dac2979ab0eb03a5557128a5fb04a1e.js",
     "service-worker.js": "/react-paint/service-worker.js",
     "static/css/main.a6b97d3c.chunk.css.map": "/react-paint/static/css/main.a6b97d3c.chunk.css.map"
   }
