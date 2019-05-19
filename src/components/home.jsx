@@ -11,7 +11,7 @@ const Home = () => {
         </div>
       </div>
       <Link to='/game/'>
-        <button>Go Play!</button>
+        <button>Go Draw!</button>
       </Link>
     </div>
   );
