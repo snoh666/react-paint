@@ -12,21 +12,8 @@
 body {
   font-family: 'Gugi',
   cursive;
-  background-color: #3742fa;
-  color: #2f3542;
-}
-body::before{
-  content: '';
-  display: block;
-  position: fixed;
-  width: 100vw;
-  height: 40vh;
-  bottom: 0;
-  left: 0;
-  border-radius: 100% 100% 0 0;
-  background-color: #2ed573;
-  z-index: -1;
-  transform: scale(1.25);
+  background-color: #636e72;
+  color: #dfe6e9;
 }
 .App{
   width: 100vw;
@@ -53,13 +40,13 @@ button{
   font-size: 21px;
   font-family: 'Gugi',
   cursive;
-  color: #2f3542;
+  color:
+  #dfe6e9;
   background: none;
-  border: 1px solid #2f3542;
+  border: 1px solid #dfe6e9;
   position: relative;
   cursor: pointer;
   z-index: 99;
-  transition: all 1s ease;
   overflow: hidden;
 }
 button::before{
@@ -72,11 +59,8 @@ button::before{
   height: 150px;
   border-radius: 200px 200px 0 0;
   background-color: #2f3542;
-  transition: all 1s ease;
+  transition: top 1s ease;
   z-index: -1;
-}
-button:hover{
-  color: #f1f2f6;
 }
 button:hover::before{
   top: -100px;
