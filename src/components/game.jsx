@@ -20,7 +20,7 @@ class Game extends React.Component{
 
     document.onmousedown = (e) => {
       isDrawing = true;
-      ctx.fillRect(e.clientX - canvasPos[0] - brushSize / 2, e.clientY - canvasPos[1], brushSize, brushSize);
+      ctx.fillRect(e.clientX - canvasPos[0] - brushSize / 2, e.clientY - canvasPos[1] + brushSize / 2, brushSize, brushSize);
     }
     document.onmouseup = () => {
       isDrawing = false;
@@ -40,7 +40,7 @@ class Game extends React.Component{
 
     document.onmousemove = (e) => {
       if(isDrawing === true && e.clientX > canvasPos[0] && e.clientY > canvasPos[1] - 5){
-        ctx.fillRect(e.clientX - canvasPos[0] - brushSize / 2, e.clientY - canvasPos[1], brushSize, brushSize);
+        ctx.fillRect(e.clientX - canvasPos[0] - brushSize / 2, e.clientY - canvasPos[1] + brushSize / 2, brushSize, brushSize);
         // ctx.beginPath();
         // ctx.arc(e.clientX - canvasPos[0], e.clientY - canvasPos[1], brushSize / 2, 0, Math.PI * 2);
         // ctx.fill();
