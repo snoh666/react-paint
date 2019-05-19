@@ -27,8 +27,16 @@ class Game extends React.Component{
     }
 
     document.onkeydown = e => {
+      console.log(e);
       if (e.code === 'ControlLeft') {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
+      } else if(e.code === 'NumpadAdd') {
+        console.log('Make bigger');
+        brushSize += 5;
+      } else if(e.code === 'NumpadSubtract') {
+        if(brushSize > 5) {
+          brushSize -= 5;
+        }
       }
     }
 
@@ -54,7 +62,7 @@ class Game extends React.Component{
           <button className="exit-btn">Go Home</button>
         </Link>
         <div className="description">
-          <span>Move mouse on canvas to draw! Press lctrl to clear.</span>
+          <span>Move mouse on canvas to draw! Press lctrl to clear. Press + or - on numpad to scale brush.</span>
         </div>
         <canvas
           ref='canvas'
