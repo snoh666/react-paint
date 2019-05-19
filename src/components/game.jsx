@@ -18,10 +18,6 @@ class Game extends React.Component{
     let isDrawing = false;
     let brushSize = 10;
 
-    document.onscroll = e => {
-      console.log(e);
-    }
-
     document.onmousedown = (e) => {
       isDrawing = true;
       ctx.fillRect(e.clientX - canvasPos[0] - 5, e.clientY - canvasPos[1], brushSize, brushSize);
