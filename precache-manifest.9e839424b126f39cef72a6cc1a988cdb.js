@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "72a5168922b818b3ffef8451120ab72c",
+    "revision": "39cf65b2b764963c434554aafa9d5043",
     "url": "/react-paint/index.html"
   },
   {
-    "revision": "8796325c5395cbd2b893",
+    "revision": "682aa6d8d2e48ec8107b",
     "url": "/react-paint/static/css/main.f976759e.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-paint/static/js/2.59543dd6.chunk.js"
   },
   {
-    "revision": "8796325c5395cbd2b893",
-    "url": "/react-paint/static/js/main.e0f95d83.chunk.js"
+    "revision": "682aa6d8d2e48ec8107b",
+    "url": "/react-paint/static/js/main.e79cf4be.chunk.js"
   },
   {
     "revision": "a4ce79f07ae788e95da7",
