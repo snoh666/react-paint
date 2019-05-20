@@ -17,10 +17,13 @@ class Game extends React.Component{
     const canvasPos = [canvas.getBoundingClientRect().x, canvas.getBoundingClientRect().y];
     let isDrawing = false;
     let brushSize = 10;
+    ctx.fillStyle = "white";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = 'black';
 
     document.onmousedown = (e) => {
       isDrawing = true;
-      ctx.fillRect(e.clientX - canvasPos[0] - brushSize / 2, e.clientY - canvasPos[1] + brushSize / 2, brushSize, brushSize);
+      ctx.fillRect(e.clientX - brushSize / 2, e.clientY, brushSize, brushSize);
     }
     document.onmouseup = () => {
       isDrawing = false;
@@ -40,12 +43,19 @@ class Game extends React.Component{
 
     document.onmousemove = (e) => {
       if(isDrawing === true && e.clientX > canvasPos[0] && e.clientY > canvasPos[1] - 5){
-        ctx.fillRect(e.clientX - canvasPos[0] - brushSize / 2, e.clientY - canvasPos[1] + brushSize / 2, brushSize, brushSize);
+        ctx.fillRect(e.clientX - brushSize / 2, e.clientY, brushSize, brushSize);
         // ctx.beginPath();
         // ctx.arc(e.clientX - canvasPos[0], e.clientY - canvasPos[1], brushSize / 2, 0, Math.PI * 2);
         // ctx.fill();
       }
     };
+
+    this.refs.downloadBtn.addEventListener('click', function() {
+
+      let png = canvas.toDataURL('image/png', 1.0);
+      this.href = png;
+
+    });
   }
 
   componentWillUnmount() {
@@ -55,16 +65,13 @@ class Game extends React.Component{
   render() {
     return (
       <div className="app-content">
-        <h1>Paint</h1>
+        <a ref='downloadBtn' href="#" className="download" download="canvas.png">Save</a>
         <Link to='/'>
-          <button className="exit-btn">Go Home</button>
+          <button className="exit-btn" target="_blank" download='canvas.png'>Go Home</button>
         </Link>
-        <div className="description">
-          <span>Move mouse on canvas to draw! Press lctrl to clear. Press + or - on numpad to scale brush.</span>
-        </div>
         <canvas
           ref='canvas'
-          style={{height: 481, width: window.innerWidth - 50, backgroundColor: 'white'}}
+          style={{height: window.innerHeight, width: window.innerWidth, backgroundColor: 'white'}}
         />
       </div>
     );
