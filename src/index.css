@@ -101,6 +101,7 @@ ul{
   width: 200px;
   height: 40px;
   font-size: 21px;
+  line-height: 40px;
   border: 1px solid #2d3436;
   color: #2d3436;
 }
