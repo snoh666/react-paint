@@ -1,6 +1,6 @@
 /*
   #2ed573 - green
-  #2f3542 - dark
+  #2d3436 - dark
   #f1f2f6 - light
   #3742fa - blue
 */
@@ -12,7 +12,7 @@
 body {
   font-family: 'Gugi',
   cursive;
-  background-color: #636e72;
+  background-color: #2d3436;
   color: #dfe6e9;
 }
 .App{
@@ -28,11 +28,11 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 .description{
   width: 500px;
   margin: 20px 0;
-  text-align: center;
 }
 button{
   width: 200px;
@@ -44,10 +44,14 @@ button{
   #dfe6e9;
   background: none;
   border: 1px solid #dfe6e9;
+  transition: color .7s ease;
   position: relative;
   cursor: pointer;
   z-index: 99;
   overflow: hidden;
+}
+button:hover{
+  color: #2d3436;
 }
 button::before{
   position: absolute;
@@ -58,7 +62,7 @@ button::before{
   width: 200px;
   height: 150px;
   border-radius: 200px 200px 0 0;
-  background-color: #2f3542;
+  background-color: #dfe6e9;
   transition: top 1s ease;
   z-index: -1;
 }
@@ -69,6 +73,14 @@ button:hover::before{
   position: fixed;
   top: 20px;
   right: 20px;
+  color: #2d3436;
+  border: 1px solid #2d3436;
+}
+.exit-btn:hover{
+  color: #dfe6e9;
+}
+.exit-btn::before{
+  background-color: #2d3436;
 }
 canvas{
   width: 1000px;
@@ -76,4 +88,19 @@ canvas{
 }
 a{
   text-decoration: none;
+}
+ul{
+  margin: 10px 0;
+  list-style-type: none;
+}
+.download{
+  top: 20px;
+  left: 20px;
+  position: fixed;
+  display: block;
+  width: 200px;
+  height: 40px;
+  font-size: 21px;
+  border: 1px solid #2d3436;
+  color: #2d3436;
 }
