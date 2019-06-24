@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-class Game extends React.Component{
+class Paint extends React.Component{
 
   componentDidMount() {
     const canvas = this.refs.canvas;
     canvas.width = canvas.clientWidth;
     canvas.height = canvas.clientHeight;
 
-    this._startGame();
+    this._startPaint();
   }
 
-  _startGame() {
+  _startPaint() {
     const canvas = this.refs.canvas;
     const ctx = canvas.getContext('2d');
     const canvasPos = [canvas.getBoundingClientRect().x, canvas.getBoundingClientRect().y];
@@ -78,4 +78,4 @@ class Game extends React.Component{
   }
 }
 
-export default Game;
+export default Paint;
