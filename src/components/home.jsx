@@ -18,7 +18,7 @@ const Home = () => {
           </span>
         </div>
       </div>
-      <Link to='/game/'>
+      <Link to='/paint/'>
         <button>Go Draw!</button>
       </Link>
     </div>
